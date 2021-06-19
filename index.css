@@ -1,0 +1,17 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+
+.nav-bar{
+    margin: 0px;
+    padding: 1px;
+    background: rgba(255,255,255,0.9);
+}
+
+.center{
+    position: absolute;
+    margin-left: 50%;
+    top: 50%;
+}
