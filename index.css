@@ -1,17 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+
+
 html, body{
     margin: 0;
     height: 100%;
+    color: #05386B;
+    display: block;
+    font-family: 'Russo One', sans-serif;
 }
 
 
 .nav-bar{
     margin: 0px;
     padding: 1px;
-    background: rgba(255,255,255,0.9);
+    background-color: #5cdb95;
+    display: flex;
+    
 }
+
+.nav-bar-mobile{
+    display: none;
+}
+
+.nav-left{
+    margin-left: 100px;
+    color: #05386B;
+    line-height: 10px;
+    letter-spacing: 2px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.nav-center{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    color: #05386B;
+}
+
+.nav-center1{
+    margin-left: -70px;
+    padding-top: 15px;
+}
+
+.nav-center1 a{
+    margin-left: 20px;
+    margin-top: 25px;
+    color: #05386B;
+    text-decoration: none;
+}
+
+.nav-right{
+    float: right;
+    padding-top: 5px;
+    margin-right: 160px;
+}
+
+/*-------------------------HEADER--------------------------------------*/
 
 .center{
     position: absolute;
     margin-left: 50%;
     top: 50%;
+}
+
+header{
+    background-image: url('media/background.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    padding-top: 90px;
+    background-position: bottom;
+    background-color: #5cdb95;
+}
+
+.header{
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    
+}
+
+.mobile-header{
+    display: none;
+}
+
+.meimage{
+    margin-left: 200px;
+    margin-top: -10px;
+    
+}
+
+.body{
+    background-color: #edf5e1;
+    color: black;
+    padding-bottom: 50px;
+    
+}
+
+
+.body2{
+    background-color: #50586C;
+    color: black;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+html::-webkit-scrollbar-track {
+    background: rgb(179, 177, 177);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #379683;
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #05386b;
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:active {
+    background: #05386b;
+    border-radius: 10px;
+  }
+
+
+
+
+@media (max-width: 800px){
+	.nav-bar{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+
+    .mobile-header{
+        display: block;
+    }
+
+    .mobile-title{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-bar-mobile{
+        display: block;
+    }
+    @keyframes checked-anim {
+        50% {
+            width: 3000px;
+            height: 3000px;
+        }
+        100% {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+    }
+    @keyframes not-checked-anim {
+        0% {
+            width: 3000px;
+            height: 3000px;
+        }
+    }
+    li, a {
+        margin: 75px 0 -55px 0;
+        color: #DCE2F0;
+        font: 14pt "Roboto", sans-serif;
+        font-weight: 700;
+        line-height: 1.8;
+        text-decoration: none;
+        text-transform: none;
+        list-style: none;
+        outline: 0;
+        display: none;
+    }
+    li {
+        width: 230px;
+        text-indent: 56px;}
+    a:focus {
+        display: block;
+        color: #333;
+        background-color: #eee;
+        transition: all .5s;
+    }
+    
+#trigger, #burger, #burger:before, #burger:after {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #DCE2F0;
+    width: 30px;
+    height: 5px;
+    transition: .2s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+#trigger {
+    height: 25px;
+    background: none;
+}
+#burger:before {
+    content: " ";
+    top: 10px;
+    left: 0;
+}
+#burger:after {
+    content: " ";
+    top: 20px;
+    left: 0;
+}
+#menu-toggle:checked + #trigger + #burger {
+    top: 35px;
+    transform: rotate(180deg);
+    transition: transform .2s ease;
+}
+
+#menu-toggle:checked + #trigger + #burger:before {
+    width: 20px;
+    top: -2px;
+    left: 18px;
+    transform: rotate(45deg) translateX(-5px);
+    transition: transform .2s ease;
+}
+#menu-toggle:checked + #trigger + #burger:after {
+    width: 20px;
+    top: 2px;
+    left: 18px;
+    transform: rotate(-45deg) translateX(-5px);
+    transition: transform .2s ease;
+}
+#menu {
+    position: absolute;
+    margin: 0; padding: 0;
+    background-color: #50586C;
+    animation: not-checked-anim .2s both;
+    transition: .2s;
+}
+#menu-toggle:checked + #trigger + #burger + #menu {
+    animation: checked-anim 1s ease both;
+}
+#menu-toggle:checked + #trigger ~ #menu > li, a {
+    display: block;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    display: none;
+}
+
+      
+
 }
