@@ -206,6 +206,12 @@ html::-webkit-scrollbar-thumb:active {
         background-color: #5cdb95;
     }
 
+    .mobile-title{
+        width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 
 
