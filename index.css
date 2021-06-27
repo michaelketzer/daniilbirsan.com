@@ -101,6 +101,10 @@ header{
     
 }
 
+.mobile-title{
+    margin-top: -150px;
+}
+
 
 .body2{
     background-color: #50586C;
@@ -151,9 +155,27 @@ html::-webkit-scrollbar-thumb:active {
   }
 
 
+  @media (max-width: 1300px){
+    .header{
+        display: flex;
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding-bottom: 80px;
+        
+    }
+    .meimage{
+        margin-left: 100px;
+        margin-top: -10px;
+        
+    }
+  }
 
 
-@media (max-width: 800px){
+
+
+@media (max-width: 1000px){
 	.nav-bar{
         display: none;
     }
@@ -174,6 +196,27 @@ html::-webkit-scrollbar-thumb:active {
     .nav-bar-mobile{
         display: block;
     }
+
+    header{
+        background-image: url('media/background.svg');
+        background-repeat: no-repeat;
+        background-size: 80%;
+        padding-top: 90px;
+        background-position: bottom;
+        background-color: #5cdb95;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     @keyframes checked-anim {
         50% {
             width: 3000px;
