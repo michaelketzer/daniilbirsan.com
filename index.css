@@ -483,15 +483,17 @@ html::-webkit-scrollbar-thumb:active {
    .content-section-2{
     display: grid;
     width: 350px;
+    margin: auto;
    }
 
    .section2-right{
-       width: 320px;
-       margin: 0;
+       width: 370px;
+       margin: auto;
    }
 
    .section2-left img{
        width: 350px;
+       margin: auto;
    }
 
 
