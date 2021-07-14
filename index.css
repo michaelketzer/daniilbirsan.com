@@ -210,6 +210,10 @@ header{
 }
 
 
+.section2-left img{
+    width: 400px;
+}
+
 /*-----------------------------------------------------Contact FORM---------------------------------------------*/
 
 .body-section5{
@@ -344,6 +348,10 @@ html::-webkit-scrollbar-thumb:active {
        margin: 0;
    }
 
+   .section2-left img{
+       width: 500px;
+   }
+
    
    /*-----------------------------------------CONTACT-------------------------------------------------------*/
    .contact-form{
@@ -423,6 +431,13 @@ html::-webkit-scrollbar-thumb:active {
         }
 
 
+
+
+        .section2-left img{
+            width: 400px;
+        }
+
+
 }
 
 
@@ -471,8 +486,12 @@ html::-webkit-scrollbar-thumb:active {
    }
 
    .section2-right{
-       width: 350px;
+       width: 320px;
        margin: 0;
+   }
+
+   .section2-left img{
+       width: 350px;
    }
 
 
