@@ -14,7 +14,7 @@ html, body{
     font-family: 'Russo One', sans-serif;
 }
 
-
+/*---------------------------------------------------NAV-BAR------------------------------------------------------------------------------------*/
 .nav-bar{
     margin: 0px;
     padding: 1px;
@@ -66,7 +66,6 @@ html, body{
 }
 
 /*-------------------------------------------------------------------------HEADER---------------------------------------------------------------------------------*/
-
 .center{
     position: absolute;
     margin-left: 50%;
@@ -102,6 +101,10 @@ header{
     
 }
 
+.meimage img{
+    width: 500px;
+}
+
 .body{
     background-color: var(--color-white);
     color: black;
@@ -120,14 +123,12 @@ header{
     padding-bottom: 50px;
 }
 
-
-/*----------------------------------------------------------------BOX----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------BOXES----------------------------------------------------------------------------------------------------------*/
 .boxes{
     display: flex; 
     width: 1200px; 
     margin: auto;
 }
-  
 
 .box1{
     border: 1px solid #edf5e1;
@@ -192,8 +193,7 @@ header{
     margin-left: 10px;    
 }
 
-/*------------------------------------------------------------------------Section 2*--------------------------------------------*/
-
+/*-------------------------------------------------------ABOUT ME SECTION-------------------------------------------------------------*/
 .body-section2{
     background-color: #5CDB95;
 }
@@ -209,13 +209,11 @@ header{
     margin-left: 100px;
 }
 
-
 .section2-left img{
     width: 400px;
 }
 
-/*-----------------------------------------------------Contact FORM---------------------------------------------*/
-
+/*-----------------------------------------------------CONTACT FORM---------------------------------------------*/
 .body-section5{
     background-color: var(--color-white);
     padding-bottom: 50px;
@@ -226,6 +224,16 @@ header{
     width: 1200px;
     margin: auto;
     display: flex;
+}
+
+#fname{
+    width: 70%;
+    font-family: monospace;
+}
+
+#email{
+    width: 70%;
+    font-family: monospace;
 }
 
 .footer-left{
@@ -263,13 +271,7 @@ header{
     font-size: 15px;
   }
 
-
-
-
-
-
-
-
+/*-----------------------------------------------SCROLL--------------------------------------------------------------*/
 html::-webkit-scrollbar {
     width: 10px;
   }
@@ -294,262 +296,15 @@ html::-webkit-scrollbar-thumb:active {
     border-radius: 10px;
   }
 
-
-
-  @media (max-width: 1300px){
-    .boxes{
-      width: 1000px;
-      margin: auto;
-    }
-
-    .box1{
-        width: 250px;
-        margin-top: 50px;
-    }
-
-    .box1 img{
-        width: 250px;
-    }
-
-    .box2{
-        width: 250px;
-        margin-top: 50px;
-    }
-
-    .box2 img{
-        width: 250px;
-    }
-
-    .box3{
-        width: 250px;
-        margin-top: 50px;
-    }
-
-    .box3 img{
-        width: 250px;
-    }
-
-   .content-section-2{
-       width: 1100px;
-   }
-
-
-   /*-----------------------------------About me----------------------------------------------*/
-
-
-
-   .content-section-2{
-    display: grid;
-    width: 550px;
-   }
-
-   .section2-right{
-       width: 550px;
-       margin: 0;
-   }
-
-   .section2-left img{
-       width: 500px;
-   }
-
-   
-   /*-----------------------------------------CONTACT-------------------------------------------------------*/
-   .contact-form{
-    width: 500px;
-    display: grid;
-    margin: auto;
-}
-    .footer-left{
-        width: 500px;
-        margin-left: 50px;
-    }
-
-    .footer-right{
-        width: 500px;
-        margin-left: 0px;
-    }
-
-    .footer-right img{
-        width: 500px;
-    }
-
-
-}
-
-
-@media (max-width: 1050px){
-    .boxes{
-      width: 850px;
-      margin: auto;
-    }
-
-    .box1{
-        width: 200px;
-        margin-top: 50px;
-    }
-
-    .box1 img{
-        width: 200px;
-    }
-
-    .box2{
-        width: 200px;
-        margin-top: 50px;
-    }
-
-    .box2 img{
-        width: 200px;
-    }
-
-    .box3{
-        width: 200px;
-        margin-top: 50px;
-    }
-
-    .box3 img{
-        width: 200px;
-    }
-
-    /*-----------------------------------------CONTACT-------------------------------------------------------*/
-    .contact-form{
-        width: 400px;
-        display: grid;
-        margin: auto;
-    }
-        .footer-left{
-            width: 400px;
-            margin-left: 50px;
-        }
-    
-        .footer-right{
-            width: 400px;
-            margin-left: 0px;
-        }
-    
-        .footer-right img{
-            width: 400px;
-        }
-
-
-
-
-        .section2-left img{
-            width: 400px;
-        }
-
-
-}
-
-
-  @media (max-width: 900px){
-      .boxes{
-        display: grid; 
-        width: 300px;
-        margin: auto;
-      }
-
-      .box1{
-          width: 300px;
-      }
-
-      .box1 img{
-          width: 300px;
-      }
-
-      .box2{
-          margin-left: 0px;
-          width: 300px;
-          margin-top: 50px;
-      }
-
-      .box2 img{
-        width: 300px;
-    }
-
-      .box3{
-          margin-left: 0;
-          width: 300px;
-          margin-top: 50px;
-      }
-
-      .box3 img{
-        width: 300px;
-    }
-
-       /*-----------------------------------About me----------------------------------------------*/
-
-
-
-   .content-section-2{
-    display: grid;
-    width: 340px;
-    margin: auto;
-   }
-
-   .section2-right{
-       width: 340px;
-       margin: auto;
-   }
-
-   .section2-left img{
-       width: 350px;
-       margin: auto;
-   }
-
-
-      /*-----------------------------------------CONTACT-------------------------------------------------------*/
-      .contact-form{
-        top: 0;
-        width: 300px;
-        margin: auto;
-        display: grid;
-    }
-    
-    .footer-left{
-        width: 300px;
-        margin: auto;
-        margin-top: 40px;
-        margin-left: 40px;
-    }
-    
-    .footer-right{
-        width: 300px;
-    }
-    
-    .footer-right img{
-        width: 300px;
-    }
-    
-    
-    .input-textarea {
-        min-height: 120px;
-        width: 70%;
-        padding: 0.625rem;
-        resize: vertical;
-      }
-    
-      .submit-button {
-        display: block;
-        width: 74.3%;
-        padding: 0.75rem;
-        background: var(--color-green);
-        color: inherit;
-        border-radius: 2px;
-        cursor: pointer;
-        color: var(--color-blue);
-        font-family: monospace;
-        font-size: 15px;
-      }
-
-
-
-
-  }
-
-
-
-
-  @media (max-width: 1300px){
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------MOBILE RESPONSIVE-----------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+  
+@media (max-width: 1260px){
     .header{
         display: flex;
         width: 900px;
@@ -559,16 +314,89 @@ html::-webkit-scrollbar-thumb:active {
         padding-bottom: 80px;
         
     }
+
     .meimage{
         margin-left: 100px;
         margin-top: -10px;
         
     }
-  }
+
+    .boxes{
+        width: 1000px;
+        margin: auto;
+    }
+  
+    .box1{
+        width: 250px;
+        margin-top: 50px;
+    }
+  
+    .box1 img{
+        width: 250px;
+    }
+  
+    .box2{
+        width: 250px;
+        margin-top: 50px;
+    }
+  
+    .box2 img{
+        width: 250px;
+    }
+  
+    .box3{
+        width: 250px;
+        margin-top: 50px;
+    }
+  
+    .box3 img{
+        width: 250px;
+    }
+  
+    .content-section-2{
+        width: 1100px;
+    }
+  
+/*-------------------------------------------About me---------------------------------------------------*/
+    .content-section-2{
+        display: grid;
+        width: 550px;
+    }
+  
+    .section2-right{
+         width: 550px;
+         margin: 0;
+    }
+  
+    .section2-left img{
+        width: 500px;
+    }
+     
+/*-----------------------------------------CONTACT-------------------------------------------------------*/
+     .contact-form{
+        width: 500px;
+        display: grid;
+        margin: auto;
+    }
+
+    .footer-left{
+        width: 500px;
+        margin-left: 50px;
+    }
+  
+    .footer-right{
+        width: 500px;
+        margin-left: 0px;
+    }
+  
+    .footer-right img{
+        width: 500px;
+    }
+}
 
 
-
-@media (max-width: 1000px){
+@media (max-width: 1150px){
+/*------------------------------------------------NAV BAR-------------------------------------------------------------------*/
 	.nav-bar{
         display: none;
     }
@@ -590,6 +418,7 @@ html::-webkit-scrollbar-thumb:active {
         display: block;
     }
 
+/*----------------------------------------------------HEADER-----------------------------------------------------------------------*/
     header{
         background-image: url('media/background.svg');
         background-repeat: no-repeat;
@@ -604,4 +433,159 @@ html::-webkit-scrollbar-thumb:active {
         margin-left: auto;
         margin-right: auto;
     }
+
+/*------------------------------------------------ABOUT ME SECTION-------------------------------------------------------------------*/
+    .boxes{
+        width: 850px;
+        margin: auto;
+    }
+  
+    .box1{
+        width: 200px;
+        margin-top: 50px;
+    }
+  
+    .box1 img{
+        width: 200px;
+    }
+  
+    .box2{
+        width: 200px;
+        margin-top: 50px;
+    }
+  
+    .box2 img{
+        width: 200px;
+    }
+  
+    .box3{
+        width: 200px;
+        margin-top: 50px;
+    }
+  
+    .box3 img{
+        width: 200px;
+    }
+  
+/*-----------------------------------------CONTACT-------------------------------------------------------*/
+    .contact-form{
+        width: 400px;
+        display: grid;
+        margin: auto;
+    }
+    .footer-left{
+        width: 400px;
+        margin-left: 50px;
+    }
+      
+    .footer-right{
+        width: 400px;
+        margin-left: 0px;
+    }
+      
+    .footer-right img{
+    width: 400px;
+    }
+  
+    .section2-left img{
+        width: 400px;
+    }
 }
+
+
+@media (max-width: 900px){
+    .boxes{
+        display: grid; 
+        width: 300px;
+        margin: auto;
+    }
+
+    .box1{
+        width: 300px;
+    }
+
+    .box1 img{
+        width: 300px;
+    }
+
+    .box2{
+        margin-left: 0px;
+        width: 300px;
+        margin-top: 50px;
+    }
+
+    .box2 img{
+        width: 300px;
+    }
+
+    .box3{
+        margin-left: 0;
+        width: 300px;
+        margin-top: 50px;
+    }
+
+    .box3 img{
+        width: 300px;
+    }
+
+/*-----------------------------------About me----------------------------------------------*/
+   .content-section-2{
+        display: grid;
+        width: 340px;
+        margin: auto;
+   }
+
+   .section2-right{
+       width: 340px;
+       margin: auto;
+   }
+
+   .section2-left img{
+       width: 350px;
+       margin: auto;
+   }
+
+/*-----------------------------------------CONTACT-------------------------------------------------------*/
+    .contact-form{
+        top: 0;
+        width: 300px;
+        margin: auto;
+        display: grid;
+    }
+    
+    .footer-left{
+        width: 300px;
+        margin: auto;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    
+    .footer-right{
+        width: 300px;
+    }
+    
+    .footer-right img{
+        width: 300px;
+    }
+    
+    .input-textarea {
+        min-height: 120px;
+        width: 70%;
+        padding: 0.625rem;
+        resize: vertical;
+    }
+    
+      .submit-button {
+        display: block;
+        width: 74.3%;
+        padding: 0.75rem;
+        background: var(--color-green);
+        color: inherit;
+        border-radius: 2px;
+        cursor: pointer;
+        color: var(--color-blue);
+        font-family: monospace;
+        font-size: 15px;
+      }
+  }
+
