@@ -79,7 +79,7 @@ header{
     background-size: 80%;
     padding-top: 90px;
     background-position: bottom;
-    background-color: #5cdb95;
+    background-color: var(--color-green);
 }
 
 .header{
@@ -103,7 +103,7 @@ header{
 }
 
 .body{
-    background-color: #edf5e1;
+    background-color: var(--color-white);
     color: black;
     padding-bottom: 50px;
     
