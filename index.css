@@ -20,7 +20,6 @@ html, body{
     padding: 1px;
     background-color: var(--color-green);
     display: flex;
-    
 }
 
 .nav-bar-mobile{
@@ -116,14 +115,13 @@ header{
     margin-top: -150px;
 }
 
-
 .body2{
     background-color: #50586C;
     color: black;
     padding-bottom: 50px;
 }
 
-/*----------------------------------------------------------------BOXES----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------BOXES---------------------------------------------------------------------------------*/
 .boxes{
     display: flex; 
     width: 1200px; 
@@ -180,13 +178,11 @@ header{
 .box2:hover{
     -webkit-box-shadow: 0px 3px 15px 4px #5CDB95; 
     box-shadow: 0px 3px 15px 4px #5CDB95;
-
 }
 
 .box3:hover{
     -webkit-box-shadow: 0px 3px 15px 4px #5CDB95; 
     box-shadow: 0px 3px 15px 4px #5CDB95;
-
 }
 
 .text{
@@ -250,15 +246,14 @@ header{
     width: 500px;
 }
 
-
 .input-textarea {
     min-height: 120px;
     width: 70%;
     padding: 0.625rem;
     resize: vertical;
-  }
+}
 
-  .submit-button {
+.submit-button {
     display: block;
     width: 74.3%;
     padding: 0.75rem;
@@ -269,12 +264,12 @@ header{
     color: var(--color-blue);
     font-family: monospace;
     font-size: 15px;
-  }
+}
 
 /*-----------------------------------------------SCROLL--------------------------------------------------------------*/
 html::-webkit-scrollbar {
     width: 10px;
-  }
+}
 
 html::-webkit-scrollbar-track {
     background: rgb(179, 177, 177);
@@ -284,17 +279,17 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
     background: #379683;
     border-radius: 10px;
-  }
+}
 
 html::-webkit-scrollbar-thumb:hover {
     background: #05386b;
     border-radius: 10px;
-  }
+}
 
 html::-webkit-scrollbar-thumb:active {
     background: #05386b;
     border-radius: 10px;
-  }
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -305,20 +300,19 @@ html::-webkit-scrollbar-thumb:active {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
   
 @media (max-width: 1260px){
-    .header{
-        display: flex;
-        width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        padding-bottom: 80px;
-        
-    }
-
     .meimage{
         margin-left: 100px;
         margin-top: -10px;
         
+    }
+
+    .header{
+        width: 900px;
+    }
+
+    .me{
+        width: 300px;
+        margin-left: 10px;
     }
 
     .boxes{
@@ -397,46 +391,34 @@ html::-webkit-scrollbar-thumb:active {
 
 @media (max-width: 1150px){
 /*------------------------------------------------NAV BAR-------------------------------------------------------------------*/
-	.nav-bar{
-        display: none;
-    }
     .header{
         display: none;
     }
 
     .mobile-header{
-        display: block;
+        display: grid;
     }
 
-    .mobile-title{
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .nav-bar-mobile{
-        display: block;
-    }
-
-/*----------------------------------------------------HEADER-----------------------------------------------------------------------*/
     header{
-        background-image: url('media/background.svg');
-        background-repeat: no-repeat;
-        background-size: 80%;
-        padding-top: 90px;
-        background-position: bottom;
-        background-color: #5cdb95;
+        background: none;
+        background-color: var(--color-green);
     }
 
     .mobile-title{
-        width: 270px;
+        width: 500px;
         margin-left: auto;
         margin-right: auto;
     }
 
-/*------------------------------------------------ABOUT ME SECTION-------------------------------------------------------------------*/
+    .mobile-title img{
+        width: 500px;
+    }
+
+
+
+/*------------------------------------------------BOXES-------------------------------------------------------------------*/
     .boxes{
-        width: 850px;
+        width: 810px;
         margin: auto;
     }
   
@@ -452,6 +434,7 @@ html::-webkit-scrollbar-thumb:active {
     .box2{
         width: 200px;
         margin-top: 50px;
+        margin-left: 70px;
     }
   
     .box2 img{
@@ -461,6 +444,7 @@ html::-webkit-scrollbar-thumb:active {
     .box3{
         width: 200px;
         margin-top: 50px;
+        margin-left: 70px;
     }
   
     .box3 img{
@@ -494,6 +478,18 @@ html::-webkit-scrollbar-thumb:active {
 
 
 @media (max-width: 900px){
+    .nav-bar{
+        display: none;
+    }
+/*----------------------------------------------HEADER---------------------------------------------------------*/
+    .mobile-title{
+        width: 350px;
+    }
+
+    .mobile-title img{
+        width: 350px;
+    }
+/*-------------------------------------------------BOXES------------------------------------------------------------*/
     .boxes{
         display: grid; 
         width: 300px;
@@ -575,7 +571,7 @@ html::-webkit-scrollbar-thumb:active {
         resize: vertical;
     }
     
-      .submit-button {
+    .submit-button {
         display: block;
         width: 74.3%;
         padding: 0.75rem;
@@ -586,6 +582,6 @@ html::-webkit-scrollbar-thumb:active {
         color: var(--color-blue);
         font-family: monospace;
         font-size: 15px;
-      }
+    }
   }
 
