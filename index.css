@@ -9,7 +9,7 @@
 html, body{
     margin: 0;
     height: 100%;
-    color: #05386B;
+    color: var(--color-blue);
     display: block;
     font-family: 'Russo One', sans-serif;
 }
@@ -18,7 +18,7 @@ html, body{
 .nav-bar{
     margin: 0px;
     padding: 1px;
-    background-color: #5cdb95;
+    background-color: var(--color-green);
     display: flex;
     
 }
@@ -55,13 +55,17 @@ html, body{
     text-decoration: none;
 }
 
+.nav-center1 a:hover{
+    text-decoration: underline;
+} 
+
 .nav-right{
     float: right;
     padding-top: 5px;
     margin-right: 160px;
 }
 
-/*-------------------------HEADER--------------------------------------*/
+/*-------------------------------------------------------------------------HEADER---------------------------------------------------------------------------------*/
 
 .center{
     position: absolute;
@@ -117,7 +121,7 @@ header{
 }
 
 
-/*------BOX------*/
+/*----------------------------------------------------------------BOX----------------------------------------------------------------------------------------------------------*/
 .boxes{
     display: flex; 
     width: 1200px; 
@@ -205,40 +209,6 @@ header{
     margin-left: 100px;
 }
 
-/*------------------------------------------------------------------------Section 3*--------------------------------------------*/
-
-.body-section3{
-    background-color: var(--color-white);
-}
-
-.content-section-3{
-    width: 1200px;
-    margin: auto;
-    display: flex;
-}
-
-.section3-right{
-    width: 600px;
-    margin-left: 100px;
-}
-
-
-/*-----------------------------------------------------Section4_---------------------------------------------*/
-.body-section4{
-    background-color: #5CDB95;
-}
-
-.content-section-4{
-    width: 1200px;
-    margin: auto;
-    display: flex;
-}
-
-.section4-right{
-    width: 600px;
-    margin-left: 100px;
-}
-
 
 /*-----------------------------------------------------Contact FORM---------------------------------------------*/
 
@@ -254,10 +224,18 @@ header{
     display: flex;
 }
 
+.footer-left{
+    width: 450px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
 .footer-right{
-    width: 600px;
-    margin: auto;
-    margin-left: 300px;
+    margin-left: 100px;
+}
+
+.footer-right img{
+    width: 500px;
 }
 
 
@@ -313,6 +291,220 @@ html::-webkit-scrollbar-thumb:active {
   }
 
 
+
+  @media (max-width: 1300px){
+    .boxes{
+      width: 1000px;
+      margin: auto;
+    }
+
+    .box1{
+        width: 250px;
+        margin-top: 50px;
+    }
+
+    .box1 img{
+        width: 250px;
+    }
+
+    .box2{
+        width: 250px;
+        margin-top: 50px;
+    }
+
+    .box2 img{
+        width: 250px;
+    }
+
+    .box3{
+        width: 250px;
+        margin-top: 50px;
+    }
+
+    .box3 img{
+        width: 250px;
+    }
+
+   .content-section-2{
+       width: 1100px;
+   }
+
+
+   /*-----------------------------------About me----------------------------------------------*/
+
+
+
+   .content-section-2{
+    display: grid;
+    width: 550px;
+   }
+
+   .section2-right{
+       width: 550px;
+       margin: 0;
+   }
+
+   
+   /*-----------------------------------------CONTACT-------------------------------------------------------*/
+   .contact-form{
+    width: 500px;
+    display: grid;
+    margin: auto;
+}
+    .footer-left{
+        width: 500px;
+        margin-left: 50px;
+    }
+
+    .footer-right{
+        width: 500px;
+        margin-left: 0px;
+    }
+
+    .footer-right img{
+        width: 500px;
+    }
+
+
+}
+
+
+@media (max-width: 1050px){
+    .boxes{
+      width: 850px;
+      margin: auto;
+    }
+
+    .box1{
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    .box1 img{
+        width: 200px;
+    }
+
+    .box2{
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    .box2 img{
+        width: 200px;
+    }
+
+    .box3{
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    .box3 img{
+        width: 200px;
+    }
+
+    /*-----------------------------------------CONTACT-------------------------------------------------------*/
+    .contact-form{
+        width: 400px;
+        display: grid;
+        margin: auto;
+    }
+        .footer-left{
+            width: 400px;
+            margin-left: 50px;
+        }
+    
+        .footer-right{
+            width: 400px;
+            margin-left: 0px;
+        }
+    
+        .footer-right img{
+            width: 400px;
+        }
+
+
+}
+
+
+  @media (max-width: 900px){
+      .boxes{
+        display: grid; 
+        width: 300px;
+        margin: auto;
+      }
+
+      .box1{
+          width: 300px;
+      }
+
+      .box1 img{
+          width: 300px;
+      }
+
+      .box2{
+          margin-left: 0px;
+          width: 300px;
+          margin-top: 50px;
+      }
+
+      .box2 img{
+        width: 300px;
+    }
+
+      .box3{
+          margin-left: 0;
+          width: 300px;
+          margin-top: 50px;
+      }
+
+      .box3 img{
+        width: 300px;
+    }
+
+       /*-----------------------------------About me----------------------------------------------*/
+
+
+
+   .content-section-2{
+    display: grid;
+    width: 350px;
+   }
+
+   .section2-right{
+       width: 350px;
+       margin: 0;
+   }
+
+
+      /*-----------------------------------------CONTACT-------------------------------------------------------*/
+      .contact-form{
+        width: 350px;
+        display: grid;
+        margin: auto;
+    }
+        .footer-left{
+            width: 350px;
+            margin-left: 50px;
+        }
+    
+        .footer-right{
+            width: 350px;
+            margin-left: 0;
+        }
+
+        .footer-right img{
+            width: 350px;
+            margin-left: 0;
+        }
+
+
+
+
+  }
+
+
+
+
   @media (max-width: 1300px){
     .header{
         display: flex;
@@ -329,7 +521,6 @@ html::-webkit-scrollbar-thumb:active {
         
     }
   }
-
 
 
 
@@ -369,7 +560,4 @@ html::-webkit-scrollbar-thumb:active {
         margin-left: auto;
         margin-right: auto;
     }
-
-
-
 }
