@@ -482,12 +482,12 @@ html::-webkit-scrollbar-thumb:active {
 
    .content-section-2{
     display: grid;
-    width: 350px;
+    width: 340px;
     margin: auto;
    }
 
    .section2-right{
-       width: 300px;
+       width: 340px;
        margin: auto;
    }
 
@@ -499,24 +499,47 @@ html::-webkit-scrollbar-thumb:active {
 
       /*-----------------------------------------CONTACT-------------------------------------------------------*/
       .contact-form{
-        width: 350px;
-        display: grid;
+        top: 0;
+        width: 300px;
         margin: auto;
+        display: grid;
     }
-        .footer-left{
-            width: 350px;
-            margin-left: 50px;
-        }
     
-        .footer-right{
-            width: 350px;
-            margin-left: 0;
-        }
-
-        .footer-right img{
-            width: 350px;
-            margin-left: 0;
-        }
+    .footer-left{
+        width: 300px;
+        margin: auto;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    
+    .footer-right{
+        width: 300px;
+    }
+    
+    .footer-right img{
+        width: 300px;
+    }
+    
+    
+    .input-textarea {
+        min-height: 120px;
+        width: 70%;
+        padding: 0.625rem;
+        resize: vertical;
+      }
+    
+      .submit-button {
+        display: block;
+        width: 74.3%;
+        padding: 0.75rem;
+        background: var(--color-green);
+        color: inherit;
+        border-radius: 2px;
+        cursor: pointer;
+        color: var(--color-blue);
+        font-family: monospace;
+        font-size: 15px;
+      }
 
 
 
