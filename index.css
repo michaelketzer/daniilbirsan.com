@@ -189,6 +189,10 @@ header{
     margin-left: 10px;    
 }
 
+.text h1{
+    width: 280px;
+}
+
 /*-------------------------------------------------------ABOUT ME SECTION-------------------------------------------------------------*/
 .body-section2{
     background-color: #5CDB95;
@@ -349,6 +353,10 @@ html::-webkit-scrollbar-thumb:active {
   
     .content-section-2{
         width: 1100px;
+    }
+
+    .text h1{
+        width: 250px;
     }
   
 /*-------------------------------------------About me---------------------------------------------------*/
@@ -522,6 +530,10 @@ html::-webkit-scrollbar-thumb:active {
 
     .box3 img{
         width: 300px;
+    }
+
+    .text h1{
+        width: 280px;
     }
 
 /*-----------------------------------About me----------------------------------------------*/
