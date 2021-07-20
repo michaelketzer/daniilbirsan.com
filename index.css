@@ -617,13 +617,13 @@ html::-webkit-scrollbar-thumb:active {
 /*-----------------------------------------CONTACT-------------------------------------------------------*/
     .contact-form{
         top: 0;
-        width: 300px;
+        width: 340px;
         margin: auto;
         display: grid;
     }
     
     .footer-left{
-        width: 300px;
+        width: 320px;
         margin: auto;
         margin-top: 40px;
         margin-left: 40px;
@@ -634,7 +634,7 @@ html::-webkit-scrollbar-thumb:active {
     }
     
     .footer-right{
-        width: 300px;
+        width: 350px;
         margin: auto;
     }
     
