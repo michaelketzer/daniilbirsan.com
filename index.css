@@ -12,6 +12,7 @@ html, body{
     color: var(--color-blue);
     display: block;
     font-family: 'Russo One', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*---------------------------------------------------NAV-BAR------------------------------------------------------------------------------------*/
